@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kinoarea — kinolar, treylerlar, aktyorlar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+<!-- Janr filtri uchun yashirin tugmalar (JavaScript o'rniga) -->
+<input type="radio" name="janr" id="g-hammasi" class="rb" checked>
+<input type="radio" name="janr" id="g-jangari" class="rb">
+<input type="radio" name="janr" id="g-sarguzasht" class="rb">
+<input type="radio" name="janr" id="g-komediya" class="rb">
+<input type="radio" name="janr" id="g-fantastika" class="rb">
+<input type="radio" name="janr" id="g-qorqinchli" class="rb">
+<input type="radio" name="janr" id="g-drama" class="rb">
+
+<!-- ===================== HEADER ===================== -->
+<header class="header">
+  <div class="container">
+    <div class="brand">
+      <a href="#top" class="logo">🎞 Kino<span>area</span></a>
+      <div class="soc">
+        <a href="#">VK</a><a href="#">IG</a><a href="#">FB</a><a href="#">TW</a>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#afisha">Afisha</a>
+      <a href="#media">Media</a>
+      <a href="#filmlar">Filmlar</a>
+      <a href="#aktyorlar">Aktyorlar</a>
+      <a href="#yangiliklar">Yangiliklar</a>
+      <a href="#kategoriyalar">Kategoriyalar</a>
+    </nav>
+
+    <div class="hr">
+      <a href="#qidiruv" class="btn-search" title="Qidirish">🔍</a>
+      <a href="#kirish" class="btn-login">Kirish</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== AFISHA ===================== -->
+<section class="block" id="afisha">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Hozir kinoda</h2><span class="line"></span>
+      <div class="tabs">
+        <label for="g-hammasi">Hammasi</label>
+        <label for="g-jangari">Jangari</label>
+        <label for="g-sarguzasht">Sarguzashtlar</label>
+        <label for="g-komediya">Komediya</label>
+        <label for="g-fantastika">Fantastika</label>
+        <label for="g-qorqinchli">Qo'rqinchli</label>
+        <label for="g-drama">Drama</label>
+      </div>
+    </div>
+
+    <div class="grid">
+      <a href="#f1" class="card film jangari drama"><div class="poster pretoria"><b class="rate">6.70</b><span class="hov">Film kartasi</span></div><h3>Pretoriyadan Qochish</h3><small>Triller, drama</small></a>
+      <a href="#f2" class="card film qorqinchli sarguzasht fantastika"><div class="poster karolin"><b class="rate">8.50</b><span class="hov">Film kartasi</span></div><h3>Karolin</h3><small>Multfilm, fantastika, qo'rqinchli</small></a>
+      <a href="#f3" class="card film fantastika sarguzasht jangari"><div class="poster avatar"><b class="rate">6.70</b><span class="hov">Film kartasi</span></div><h3>Avatar: Olov va Kul</h3><small>Fantastika, sarguzasht, jangari</small></a>
+      <a href="#f4" class="card film komediya sarguzasht"><div class="poster boshqotirma"><b class="rate">8.00</b><span class="hov">Film kartasi</span></div><h3>Boshqotirma 2</h3><small>Multfilm, komediya, sarguzasht</small></a>
+      <a href="#f5" class="card film fantastika jangari komediya sarguzasht"><div class="poster katta6"><b class="rate">4.90</b><span class="hov">Film kartasi</span> <img src="./1-film.png" alt=""></div><h3>Katta Qahramon 6</h3><small>Multfilm, fantastika, jangari</small></a>
+      <a href="#f6" class="card film sarguzasht komediya fantastika"><div class="poster muzlagan"><b class="rate">6.90</b><span class="hov">Film kartasi</span> <img src="./2-film.png" alt=""></div><h3>Muzlagan o'lka</h3><small>Multfilm, sarguzasht, komediya</small></a>
+      <a href="#f7" class="card film jangari drama"><div class="poster ford"><b class="rate">8.10</b><span class="hov">Film kartasi</span> <img src="./3-film.png" alt=""></div><h3>Ford Ferrariga qarshi</h3><small>Jangari, drama, sport</small></a>
+      <a href="#f8" class="card film jangari komediya"><div class="poster gentlemen"><b class="rate">7.80</b><span class="hov">Film kartasi</span> <img src="./4-film.png" alt=""></div><h3>Jentlmenlar</h3><small>Jangari, komediya, jinoyat</small></a>
+      
+    </div>
+
+    <div class="center"><a href="#kategoriyalar" class="btn-outline">Barcha filmlar</a></div>
+  </div>
+</section>
+
+<!-- ===================== MEDIA (TREYLERLAR) ===================== -->
+<section class="block alt" id="media">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Yangi treylerlar</h2>
+      <a href="#t1" class="all-link">Treylerlar →</a>
+    </div>
+
+    <div class="grid trailers">
+      <a href="#t1" class="card"><div class="poster wide mulan"><span class="play">▶</span> <img src="./1-film.png" alt=""></div><h3>Mulan</h3></a>
+      <a href="#t2" class="card"><div class="poster wide forsaj"><span class="play">▶</span> <img src="./2-film.png" alt=""></div><h3>Forsaj 9</h3></a>
+      <a href="#t3" class="card"><div class="poster wide beva"><span class="play">▶</span> <img src="./3-film.png" alt=""></div><h3>Qora Beva</h3></a>
+      <a href="#t4" class="card"><div class="poster wide sokin"><span class="play">▶</span> <img src="./4-film.png" alt=""></div><h3>Sokin joy 2</h3></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FILMLAR ===================== -->
+<section class="block" id="filmlar">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Mashhur filmlar</h2><span class="line"></span>
+    </div>
+
+    <div class="row">
+      <a href="#f9" class="card"><div class="poster joker"><b class="rate">8.40</b><span class="hov">Film kartasi</span> <img src="./5-film.png" alt=""></div><h3>Joker</h3><small>Triller, drama, jinoyat</small></a>
+      <a href="#f10" class="card"><div class="poster toy4"><b class="rate">7.80</b><span class="hov">Film kartasi</span> <img src="./6-film.png" alt=""></div><h3>O'yinchoqlar hikoyasi 4</h3><small>Multfilm, komediya</small></a>
+      <a href="#f11" class="card"><div class="poster gollivud"><b class="rate">7.70</b><span class="hov">Film kartasi</span> <img src="./7-film.png" alt=""></div><h3>Bir paytlar... Gollivudda</h3><small>Komediya, drama</small></a>
+      <a href="#f12" class="card"><div class="poster midsommar"><b class="rate">7.10</b><span class="hov">Film kartasi</span> <img src="./8-film.png" alt=""></div><h3>Midsommar</h3><small>Qo'rqinchli, drama</small></a>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ===================== AKTYORLAR ===================== -->
+<section class="block alt" id="aktyorlar">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Mashhur aktyorlar</h2><span class="line"></span>
+    </div>
+
+    <div class="grid people">
+      <a href="#a1" class="card person"><div class="poster phoenix"><span class="pname">Xoakin Feniks<small>Joaquin Phoenix</small></span></div></a>
+      <a href="#a2" class="card person"><div class="poster statham"><span class="pname">Jeyson Steytem<small>Jason Statham</small></span></div></a>
+      <a href="#a3" class="card person"><div class="poster tarantino"><span class="pname">Kventin Tarantino<small>Quentin Tarantino</small></span></div></a>
+      <a href="#a4" class="card person"><div class="poster robbie"><span class="pname">Margo Robbi<small>Margot Robbie</small></span></div></a>
+      <a href="#a5" class="card person"><div class="poster damon"><span class="pname">Mett Deymon<small>Matt Damon</small></span></div></a>
+      <a href="#a6" class="card person"><div class="poster bale"><span class="pname">Kristian Beyl<small>Christian Bale</small></span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== YANGILIKLAR ===================== -->
+<section class="block" id="yangiliklar">
+  <div class="container">
+    <div class="sec-head">
+      <h2>So'nggi yangiliklar</h2>
+      <a href="#n1" class="all-link">Barcha yangiliklar →</a>
+    </div>
+
+    <div class="news">
+      <a href="#n1" class="nb">
+        <div class="poster news1"></div>
+        <span class="shade"></span>
+        <span class="nmeta">15 Apr 2020 &nbsp; 👁 242 &nbsp; 💬 14</span>
+        <div class="ntext">
+          <h3>O'lish vaqti emas. Film premyerasi ko'chirildi</h3>
+          <p>Kinoteatrlar yopilgani sababli kutilgan filmning chiqish sanasi keyinga surildi. Yangi sana va tafsilotlar ichida.</p>
+        </div>
+      </a>
+
+      <div class="nside">
+        <a href="#n2" class="ns"><div class="poster news2"></div><span class="shade"></span><small>15 Apr 2020</small><b>Sonik dizayni oxirgi anonsdan keyin qanday o'zgardi</b></a>
+        <a href="#n3" class="ns"><div class="poster news3"></div><span class="shade"></span><small>15 Apr 2020</small><b>Yangi treyler: tomoshabinlarni hayratga solgan lavhalar</b></a>
+        <a href="#n4" class="ns"><div class="poster news4"></div><span class="shade"></span><small>13 Apr 2020</small><b>Ha, aynan shunday! Kino olamidagi eng yaxshi lahzalar</b></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== KATEGORIYALAR ===================== -->
+<section class="block alt" id="kategoriyalar">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Kategoriyalar</h2><span class="line"></span>
+    </div>
+
+
+    <div class="grid small">
+      <a href="#f1" class="card film jangari drama"><div class="poster pretoria"></div><h3>Pretoriyadan Qochish</h3></a>
+      <a href="#f2" class="card film qorqinchli sarguzasht fantastika"><div class="poster karolin"></div><h3>Karolin</h3></a>
+      <a href="#f3" class="card film fantastika sarguzasht jangari"><div class="poster avatar"></div><h3>Avatar: Olov va Kul</h3></a>
+      <a href="#f4" class="card film komediya sarguzasht"><div class="poster boshqotirma"></div><h3>Boshqotirma 2</h3></a>
+      <a href="#f5" class="card film fantastika jangari komediya sarguzasht"><div class="poster katta6"></div><h3>Katta Qahramon 6</h3></a>
+      <a href="#f6" class="card film sarguzasht komediya fantastika"><div class="poster muzlagan"></div><h3>Muzlagan o'lka</h3></a>
+      <a href="#f7" class="card film jangari drama"><div class="poster ford"></div><h3>Ford Ferrariga qarshi</h3></a>
+      <a href="#f8" class="card film jangari komediya"><div class="poster gentlemen"></div><h3>Jentlmenlar</h3></a>
+      <a href="#f9" class="card film drama jangari"><div class="poster joker"></div><h3>Joker</h3></a>
+      <a href="#f10" class="card film komediya sarguzasht fantastika"><div class="poster toy4"></div><h3>O'yinchoqlar hikoyasi 4</h3></a>
+      <a href="#f11" class="card film komediya drama"><div class="poster gollivud"></div><h3>Bir paytlar... Gollivudda</h3></a>
+      <a href="#f12" class="card film qorqinchli drama"><div class="poster midsommar"></div><h3>Midsommar</h3></a>
+      <a href="#f13" class="card film komediya drama"><div class="poster parazit"></div><h3>Parazitlar</h3></a>
+      <a href="#f14" class="card film jangari drama"><div class="poster f1917"></div><h3>1917</h3></a>
+      <a href="#f15" class="card film fantastika sarguzasht komediya"><div class="poster heroes"></div><h3>Biz qahramon bo'la olamiz</h3></a>
+      <a href="#f16" class="card film fantastika jangari sarguzasht"><div class="poster alita"></div><h3>Alita: Jang farishtasi</h3></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OBUNA ===================== -->
+<section class="sub" id="obuna">
+  <div class="container">
+    <p class="sub-logo">🎞 Kinoarea</p>
+    <h2>E-mail yangiliklariga obuna bo'ling</h2>
+    <p class="sub-text">Yangi filmlar va kino yangiliklaridan xabardor bo'lishni xohlasangiz, quyidagi formani to'ldiring. Obuna bepul.</p>
+
+    <form action="#rahmat" method="get" class="sub-form">
+      <input type="email" name="email" placeholder="E-mail manzilingizni yozing" required>
+      <button type="submit">Obuna bo'lish</button>
+    </form>
+    <label class="agree"><input type="checkbox" required> Men <a href="#maxfiylik">maxfiylik siyosati</a> shartlariga roziman</label>
+
+    <p class="thanks" id="rahmat">✅ Rahmat! Obuna qabul qilindi.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="soc big"><a href="#">VK</a><a href="#">IG</a><a href="#">FB</a><a href="#">TW</a><a href="#">YT</a></div>
+    <nav class="fnav">
+      <a href="#afisha">Afisha</a>
+      <a href="#yangiliklar">Yangiliklar</a>
+      <a href="#aktyorlar">Aktyorlar</a>
+      <a href="#filmlar">Reytinglar</a>
+      <a href="#media">Treylerlar</a>
+      <a href="#kategoriyalar">Filmlar katalogi</a>
+    </nav>
+    <p class="copy">2026 © Kinoarea. Barcha huquqlar himoyalangan.</p>
+    <a href="#maxfiylik" class="policy">Maxfiylik siyosati</a>
+  </div>
+</footer>
+
+<a href="#top" class="totop" title="Yuqoriga">↑</a>
+
+<!-- ===================== OYNALAR (MODAL) ===================== -->
+<!-- Yopish tugmasi: href="#yopish" (bunday id yo'q, shuning uchun sahifa sakramaydi) -->
+
+<!-- QIDIRUV -->
+<div class="modal" id="qidiruv"><a href="#yopish" class="bg"></a>
+  <div class="mbox single"><a href="#yopish" class="x">✕</a>
+    <div class="minfo">
+      <h3>Film qidirish</h3>
+      <p class="meta">Filmni tanlang va uning kartasini oching</p>
+      <ul class="flist">
+        <li><a href="#f1">Pretoriyadan Qochish</a></li><li><a href="#f2">Karolin</a></li>
+        <li><a href="#f3">Avatar: Olov va Kul</a></li><li><a href="#f4">Boshqotirma 2</a></li>
+        <li><a href="#f5">Katta Qahramon 6</a></li><li><a href="#f6">Muzlagan o'lka</a></li>
+        <li><a href="#f7">Ford Ferrariga qarshi</a></li><li><a href="#f8">Jentlmenlar</a></li>
+        <li><a href="#f9">Joker</a></li><li><a href="#f10">O'yinchoqlar hikoyasi 4</a></li>
+        <li><a href="#f11">Bir paytlar... Gollivudda</a></li><li><a href="#f12">Midsommar</a></li>
+        <li><a href="#f13">Parazitlar</a></li><li><a href="#f14">1917</a></li>
+        <li><a href="#f15">Biz qahramon bo'la olamiz</a></li><li><a href="#f16">Alita: Jang farishtasi</a></li>
+        <li><a href="#t1">Mulan (treyler)</a></li><li><a href="#t2">Forsaj 9 (treyler)</a></li>
+        <li><a href="#t3">Qora Beva (treyler)</a></li><li><a href="#t4">Sokin joy 2 (treyler)</a></li>
+        <li><a href="#t5">Dyuna (treyler)</a></li><li><a href="#t6">Tenet (treyler)</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- KIRISH -->
+<div class="modal" id="kirish"><a href="#yopish" class="bg"></a>
+  <div class="mbox single narrow"><a href="#yopish" class="x">✕</a>
+    <div class="minfo">
+      <h3>Kirish</h3>
+      <p class="meta">Hisobingizga kiring</p>
+      <!-- Parolga name berilmagan: u manzil qatoriga chiqib qolmasligi uchun -->
+      <form action="#xush" method="get" class="lform">
+        <input type="email" name="email" placeholder="E-mail" required>
+        <input type="password" placeholder="Parol" required>
+        <button type="submit" class="mbtn">Kirish</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="xush"><a href="#yopish" class="bg"></a>
+  <div class="mbox single narrow"><a href="#yopish" class="x">✕</a>
+    <div class="minfo"><h3>Xush kelibsiz! 👋</h3><p>Siz tizimga kirdingiz.</p><a href="#yopish" class="mbtn">Yaxshi</a></div>
+  </div>
+</div>
+
+<!-- MAXFIYLIK SIYOSATI -->
+<div class="modal" id="maxfiylik"><a href="#yopish" class="bg"></a>
+  <div class="mbox single"><a href="#yopish" class="x">✕</a>
+    <div class="minfo">
+      <h3>Maxfiylik siyosati</h3>
+      <p class="meta">Oddiy tilda</p>
+      <p>Biz sizning e-mail manzilingizni faqat yangiliklar yuborish uchun ishlatamiz. Uni uchinchi shaxslarga bermaymiz. Istalgan vaqtda obunadan chiqishingiz mumkin.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ---------- FILMLAR (afisha + mashhur) ---------- -->
+<div class="modal" id="f1"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster pretoria"></div>
+  <div class="minfo"><h3>Pretoriyadan Qochish</h3><p class="meta">2020 · Triller, drama · 106 daqiqa · ⭐ 6.70</p>
+    <dl><dt>Rejissyor</dt><dd>Francis Annan</dd><dt>Aktyorlar</dt><dd>Daniel Radcliffe, Daniel Webber, Ian Hart</dd><dt>Janr</dt><dd>Triller, drama</dd></dl>
+    <p>1970-yillar oxirida Janubiy Afrikada ikki siyosiy mahbus qamoqxonadan qochish rejasini tuzadi. Ularning qurollari: yog'och kalitlar va sabr.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Escape+from+Pretoria+trailer">▶ Treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="f2"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster karolin"></div>
+  <div class="minfo"><h3>Karolin</h3><p class="meta">2009 · Multfilm, fantastika, qo'rqinchli · 100 daqiqa · ⭐ 8.50</p>
+    <dl><dt>Rejissyor</dt><dd>Henry Selick</dd><dt>Ovoz berganlar</dt><dd>Dakota Fanning, Teri Hatcher, Keith David</dd><dt>Janr</dt><dd>Multfilm, fantastika</dd></dl>
+    <p>Karolin yangi uyga ko'chib keladi va devordagi kichik eshikni topadi. Eshik ortida hamma narsa ajoyib ko'rinadigan «boshqa dunyo» bor, lekin u tuzoq bo'lib chiqadi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Coraline+trailer">▶ Treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="f3"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster avatar"></div>
+  <div class="minfo"><h3>Avatar: Olov va Kul</h3><p class="meta">2025 · Fantastika, sarguzasht, jangari · 197 daqiqa · ⭐ 6.70</p>
+    <dl><dt>Rejissyor</dt><dd>James Cameron</dd><dt>Aktyorlar</dt><dd>Sam Worthington, Zoe Saldaña, Sigourney Weaver</dd><dt>Janr</dt><dd>Fantastika, sarguzasht</dd></dl>
+    <p>Pandora haqidagi hikoya davom etadi: Jeyk va Neytiri oilasi yangi xavf va yangi qabila bilan to'qnash keladi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Avatar+Fire+and+Ash+trailer">▶ Treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="f4"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster boshqotirma"></div>
+  <div class="minfo"><h3>Boshqotirma 2</h3><p class="meta">2024 · Multfilm, komediya, sarguzasht · 96 daqiqa · ⭐ 8.00</p>
+    <dl><dt>Rejissyor</dt><dd>Kelsey Mann</dd><dt>Ovoz berganlar</dt><dd>Amy Poehler, Maya Hawke, Kensington Tallman</dd><dt>Janr</dt><dd>Multfilm, komediya</dd></dl>
+    <p>Rayli o'smir bo'ladi. Uning boshida yangi his-tuyg'ular, jumladan Xavotir paydo bo'ladi va eski his-tuyg'ular bilan to'qnashadi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Inside+Out+2+trailer">▶ Treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="f5"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster katta6"></div>
+  <div class="minfo"><h3>Katta Qahramon 6</h3><p class="meta">2014 · Multfilm, fantastika, jangari · 102 daqiqa · ⭐ 4.90</p>
+    <dl><dt>Rejissyor</dt><dd>Don Hall, Chris Williams</dd><dt>Ovoz berganlar</dt><dd>Ryan Potter, Scott Adsit, Jamie Chung</dd><dt>Janr</dt><dd>Multfilm, fantastika</dd></dl>
+    <p>Yosh ixtirochi Hiro va uning yumshoq robot do'sti Beymaks o'rtoqlari bilan super qahramonlar jamoasiga aylanib, shaharni xavfdan himoya qiladi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Big+Hero+6+trailer">▶ Treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="f6"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster muzlagan"></div>
+  <div class="minfo"><h3>Muzlagan o'lka</h3><p class="meta">2013 · Multfilm, sarguzasht, komediya · 102 daqiqa · ⭐ 6.90</p>
+    <dl><dt>Rejissyor</dt><dd>Chris Buck, Jennifer Lee</dd><dt>Ovoz berganlar</dt><dd>Kristen Bell, Idina Menzel, Jonathan Groff</dd><dt>Janr</dt><dd>Multfilm, sarguzasht</dd></dl>
+    <p>Anna opasi Elza o'zi bilmagan holda butun shohlikni abadiy qishga aylantirib qo'yganidan so'ng, uni topish va yozni qaytarish uchun yo'lga chiqadi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Frozen+2013+trailer">▶ Treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="f7"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster ford"></div>
+  <div class="minfo"><h3>Ford Ferrariga qarshi</h3><p class="meta">2019 · Jangari, drama, sport · 152 daqiqa · ⭐ 8.10</p>
+    <dl><dt>Rejissyor</dt><dd>James Mangold</dd><dt>Aktyorlar</dt><dd>Matt Damon, Christian Bale, Caitríona Balfe</dd><dt>Janr</dt><dd>Jangari, drama</dd></dl>
+    <p>Konstruktor va poygachi 1966-yildagi Le-Man poygasida Ferrari hukmronligini sindirish uchun Ford kompaniyasi uchun maxsus mashina yaratadi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Ford+v+Ferrari+trailer">▶ Treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="f8"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster gentlemen"></div>
+  <div class="minfo"><h3>Jentlmenlar</h3><p class="meta">2019 · Jangari, komediya, jinoyat · 113 daqiqa · ⭐ 7.80</p>
+    <dl><dt>Rejissyor</dt><dd>Guy Ritchie</dd><dt>Aktyorlar</dt><dd>Matthew McConaughey, Charlie Hunnam, Hugh Grant</dd><dt>Janr</dt><dd>Jangari, komediya</dd></dl>
+    <p>Angliyadagi eng yirik giyohvand biznesning egasi ishini sotmoqchi bo'ladi. Shundan keyin shahar jinoyatchilari o'rtasida hiyla va xiyonatlar boshlanadi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=The+Gentlemen+2019+trailer">▶ Treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="f9"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster joker"></div>
+  <div class="minfo"><h3>Joker</h3><p class="meta">2019 · Triller, drama, jinoyat · 122 daqiqa · ⭐ 8.40</p>
+    <dl><dt>Rejissyor</dt><dd>Todd Phillips</dd><dt>Aktyorlar</dt><dd>Joaquin Phoenix, Robert De Niro, Zazie Beetz</dd><dt>Janr</dt><dd>Triller, drama</dd></dl>
+    <p>Gotham shahridagi kulgichi Artur Fleck jamiyat tomonidan chetlatilib, asta-sekin shaharning eng xavfli jinoyatchisiga aylanadi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Joker+2019+trailer">▶ Treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="f10"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster toy4"></div>
+  <div class="minfo"><h3>O'yinchoqlar hikoyasi 4</h3><p class="meta">2019 · Multfilm, komediya, sarguzasht · 100 daqiqa · ⭐ 7.80</p>
+    <dl><dt>Rejissyor</dt><dd>Josh Cooley</dd><dt>Ovoz berganlar</dt><dd>Tom Hanks, Tim Allen, Annie Potts</dd><dt>Janr</dt><dd>Multfilm, komediya</dd></dl>
+    <p>Vudi va do'stlari yangi egasi Bonnining yangi o'yinchog'i Forkini yo'qotib qo'ymaslik uchun yo'lga chiqadi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Toy+Story+4+trailer">▶ Treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="f11"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster gollivud"></div>
+  <div class="minfo"><h3>Bir paytlar... Gollivudda</h3><p class="meta">2019 · Komediya, drama · 161 daqiqa · ⭐ 7.70</p>
+    <dl><dt>Rejissyor</dt><dd>Quentin Tarantino</dd><dt>Aktyorlar</dt><dd>Leonardo DiCaprio, Brad Pitt, Margot Robbie</dd><dt>Janr</dt><dd>Komediya, drama</dd></dl>
+    <p>1969-yil Los-Anjeles. Pasayib borayotgan televizion aktyor va uning dublyori Gollivudning o'zgarayotgan dunyosida o'z o'rnini qidiradi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Once+Upon+a+Time+in+Hollywood+trailer">▶ Treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="f12"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster midsommar"></div>
+  <div class="minfo"><h3>Midsommar</h3><p class="meta">2019 · Qo'rqinchli, drama · 148 daqiqa · ⭐ 7.10</p>
+    <dl><dt>Rejissyor</dt><dd>Ari Aster</dd><dt>Aktyorlar</dt><dd>Florence Pugh, Jack Reynor, William Jackson Harper</dd><dt>Janr</dt><dd>Qo'rqinchli, drama</dd></dl>
+    <p>Do'stlar guruhi Shvetsiyada to'rt yilda bir marta o'tadigan yoz bayramiga boradi. Quyoshli bayram sekin-asta dahshatli tus oladi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Midsommar+trailer">▶ Treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="f13"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster parazit"></div>
+  <div class="minfo"><h3>Parazitlar</h3><p class="meta">2019 · Triller, drama, komediya · 132 daqiqa · ⭐ 8.50</p>
+    <dl><dt>Rejissyor</dt><dd>Bong Joon-ho</dd><dt>Aktyorlar</dt><dd>Song Kang-ho, Choi Woo-shik, Park So-dam</dd><dt>Janr</dt><dd>Triller, drama</dd></dl>
+    <p>Kambag'al oila a'zolari birin-ketin boy oilaning uyiga ishga kira boshlaydi. Bu rejaning kutilmagan oqibatlari bo'ladi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Parasite+2019+trailer">▶ Treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="f14"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster f1917"></div>
+  <div class="minfo"><h3>1917</h3><p class="meta">2019 · Urush, drama · 119 daqiqa · ⭐ 8.20</p>
+    <dl><dt>Rejissyor</dt><dd>Sam Mendes</dd><dt>Aktyorlar</dt><dd>George MacKay, Dean-Charles Chapman, Colin Firth</dd><dt>Janr</dt><dd>Urush, drama</dd></dl>
+    <p>Birinchi jahon urushi. Ikki yosh askar dushman hududi orqali muhim xabarni yetkazishi kerak, bu 1600 kishining hayotini saqlab qolishi mumkin.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=1917+movie+trailer">▶ Treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="f15"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster heroes"></div>
+  <div class="minfo"><h3>Biz qahramon bo'la olamiz</h3><p class="meta">2020 · Fantastika, sarguzasht, komediya · 100 daqiqa · ⭐ 4.00</p>
+    <dl><dt>Rejissyor</dt><dd>Robert Rodriguez</dd><dt>Aktyorlar</dt><dd>Priyanka Chopra Jonas, Pedro Pascal, YaYa Gosselin</dd><dt>Janr</dt><dd>Fantastika, oilaviy</dd></dl>
+    <p>Super qahramonlar o'z sayyorasini o'g'irlab ketgan musofirlarga qarshi kurashadi. Ularning bolalari esa katta odamlar qila olmagan ishni o'zlari qilishi kerak bo'ladi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=We+Can+Be+Heroes+trailer">▶ Treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="f16"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster alita"></div>
+  <div class="minfo"><h3>Alita: Jang farishtasi</h3><p class="meta">2019 · Fantastika, jangari, sarguzasht · 122 daqiqa · ⭐ 7.30</p>
+    <dl><dt>Rejissyor</dt><dd>Robert Rodriguez</dd><dt>Aktyorlar</dt><dd>Rosa Salazar, Christoph Waltz, Jennifer Connelly, Mahershala Ali</dd><dt>Janr</dt><dd>Fantastika, jangari</dd></dl>
+    <p>Uzoq kelajakda doktor Ido axlat uyumidan yarim robot qizning boshini topib, uni qayta tiriltiradi. Alita o'z o'tmishini bilmaydi, lekin u g'ayrioddiy jangchi ekanini sezadi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Alita+Battle+Angel+trailer">▶ Treylerni ko'rish</a></div></div></div>
+
+<!-- ---------- TREYLERLAR ---------- -->
+<div class="modal" id="t1"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster mulan"></div>
+  <div class="minfo"><h3>Mulan</h3><p class="meta">2020 · Sarguzasht, jangari · 115 daqiqa</p>
+    <dl><dt>Rejissyor</dt><dd>Niki Caro</dd><dt>Aktyorlar</dt><dd>Liu Yifei, Donnie Yen, Gong Li</dd></dl>
+    <p>Qadimgi Xitoyda yosh qiz kasal otasining o'rniga armiyaga erkak qiyofasida yozilib, vatanini himoya qiladi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Mulan+2020+trailer">▶ YouTube'da treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="t2"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster forsaj"></div>
+  <div class="minfo"><h3>Forsaj 9</h3><p class="meta">2021 · Jangari, jinoyat · 143 daqiqa</p>
+    <dl><dt>Rejissyor</dt><dd>Justin Lin</dd><dt>Aktyorlar</dt><dd>Vin Diesel, Michelle Rodriguez, John Cena</dd></dl>
+    <p>Dominik va uning jamoasi tinch hayotdan chiqib, oila sirlari va yangi dushman bilan yuzma-yuz keladi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=F9+Fast+and+Furious+9+trailer">▶ YouTube'da treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="t3"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster beva"></div>
+  <div class="minfo"><h3>Qora Beva</h3><p class="meta">2021 · Jangari, sarguzasht · 134 daqiqa</p>
+    <dl><dt>Rejissyor</dt><dd>Cate Shortland</dd><dt>Aktyorlar</dt><dd>Scarlett Johansson, Florence Pugh, David Harbour</dd></dl>
+    <p>Natasha Romanoff o'tmishi bilan to'qnash keladi: uni ta'qib qilayotgan kuch sirli o'tmishi bilan bog'liq.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Black+Widow+2021+trailer">▶ YouTube'da treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="t4"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster sokin"></div>
+  <div class="minfo"><h3>Sokin joy 2</h3><p class="meta">2020 · Qo'rqinchli, triller · 97 daqiqa</p>
+    <dl><dt>Rejissyor</dt><dd>John Krasinski</dd><dt>Aktyorlar</dt><dd>Emily Blunt, Cillian Murphy, Millicent Simmonds</dd></dl>
+    <p>Abbott oilasi uyidan chiqib, ovozga qarab ov qiluvchi maxluqlar bosib olgan dunyoda omon qolishga urinadi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=A+Quiet+Place+Part+II+trailer">▶ YouTube'da treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="t5"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster dyuna"></div>
+  <div class="minfo"><h3>Dyuna</h3><p class="meta">2021 · Fantastika, sarguzasht · 155 daqiqa</p>
+    <dl><dt>Rejissyor</dt><dd>Denis Villeneuve</dd><dt>Aktyorlar</dt><dd>Timothée Chalamet, Zendaya, Rebecca Ferguson</dd></dl>
+    <p>Yosh Pol Atreydes oilasi bilan sahro sayyorasi Arrakisga boradi. Bu yerda koinotdagi eng qimmatli modda topiladi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Dune+2021+trailer">▶ YouTube'da treylerni ko'rish</a></div></div></div>
+
+<div class="modal" id="t6"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster tenet"></div>
+  <div class="minfo"><h3>Tenet</h3><p class="meta">2020 · Fantastika, jangari, triller · 150 daqiqa</p>
+    <dl><dt>Rejissyor</dt><dd>Christopher Nolan</dd><dt>Aktyorlar</dt><dd>John David Washington, Robert Pattinson, Elizabeth Debicki</dd></dl>
+    <p>Maxfiy agent dunyoni uchinchi jahon urushidan saqlab qolish uchun vaqtni teskari yo'naltirish sirlari bilan ishlashga majbur bo'ladi.</p>
+    <a class="mbtn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Tenet+2020+trailer">▶ YouTube'da treylerni ko'rish</a></div></div></div>
+
+<!-- ---------- AKTYORLAR ---------- -->
+<div class="modal" id="a1"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster phoenix"></div>
+  <div class="minfo"><h3>Xoakin Feniks</h3><p class="meta">Joaquin Phoenix · 1974 · AQSh</p>
+    <dl><dt>Kasbi</dt><dd>Aktyor</dd><dt>Mashhur filmlari</dt><dd>Joker, Gladiator, Walk the Line, Her</dd></dl>
+    <p>«Joker» filmidagi roli uchun eng yaxshi erkak roli uchun «Oskar» mukofotini olgan.</p>
+    <a class="mbtn" href="#f9">🎬 Joker filmi</a></div></div></div>
+
+<div class="modal" id="a2"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster statham"></div>
+  <div class="minfo"><h3>Jeyson Steytem</h3><p class="meta">Jason Statham · 1967 · Buyuk Britaniya</p>
+    <dl><dt>Kasbi</dt><dd>Aktyor</dd><dt>Mashhur filmlari</dt><dd>Transporter, Snatch, Meg, Forsaj seriyasi</dd></dl>
+    <p>Jangari filmlardagi o'zi bajaradigan sahnalari bilan mashhur. Kinoga kelishdan oldin sho'ng'in bo'yicha terma jamoada chiqqan.</p></div></div></div>
+
+<div class="modal" id="a3"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster tarantino"></div>
+  <div class="minfo"><h3>Kventin Tarantino</h3><p class="meta">Quentin Tarantino · 1963 · AQSh</p>
+    <dl><dt>Kasbi</dt><dd>Rejissyor, ssenariynavis, aktyor</dd><dt>Mashhur filmlari</dt><dd>Pulp Fiction, Kill Bill, Django Unchained, Bir paytlar... Gollivudda</dd></dl>
+    <p>O'ziga xos dialoglari va tuzilishi bilan tanilgan.</p>
+    <a class="mbtn" href="#f11">🎬 Bir paytlar... Gollivudda</a></div></div></div>
+
+<div class="modal" id="a4"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster robbie"></div>
+  <div class="minfo"><h3>Margo Robbi</h3><p class="meta">Margot Robbie · 1990 · Avstraliya</p>
+    <dl><dt>Kasbi</dt><dd>Aktrisa, prodyuser</dd><dt>Mashhur filmlari</dt><dd>The Wolf of Wall Street, I, Tonya, Barbie</dd></dl>
+    <p>Hollivudning eng ko'zga ko'ringan aktrisalaridan biri; o'z prodyuserlik kompaniyasiga ham ega.</p>
+    <a class="mbtn" href="#f11">🎬 Bir paytlar... Gollivudda</a></div></div></div>
+
+<div class="modal" id="a5"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster damon"></div>
+  <div class="minfo"><h3>Mett Deymon</h3><p class="meta">Matt Damon · 1970 · AQSh</p>
+    <dl><dt>Kasbi</dt><dd>Aktyor, ssenariynavis</dd><dt>Mashhur filmlari</dt><dd>Good Will Hunting, Bourne seriyasi, The Martian, Ford Ferrariga qarshi</dd></dl>
+    <p>«Good Will Hunting» uchun do'sti bilan birga yozgan ssenariysi «Oskar»ga sazovor bo'lgan.</p>
+    <a class="mbtn" href="#f7">🎬 Ford Ferrariga qarshi</a></div></div></div>
+
+<div class="modal" id="a6"><a href="#yopish" class="bg"></a><div class="mbox"><a href="#yopish" class="x">✕</a>
+  <div class="poster bale"></div>
+  <div class="minfo"><h3>Kristian Beyl</h3><p class="meta">Christian Bale · 1974 · Buyuk Britaniya</p>
+    <dl><dt>Kasbi</dt><dd>Aktyor</dd><dt>Mashhur filmlari</dt><dd>The Dark Knight, The Machinist, The Fighter, Ford Ferrariga qarshi</dd></dl>
+    <p>Rollari uchun tashqi ko'rinishini keskin o'zgartirishi bilan mashhur.</p>
+    <a class="mbtn" href="#f7">🎬 Ford Ferrariga qarshi</a></div></div></div>
+
+<!-- ---------- YANGILIKLAR ---------- -->
+<div class="modal" id="n1"><a href="#yopish" class="bg"></a><div class="mbox single wide-box"><a href="#yopish" class="x">✕</a>
+  <div class="minfo"><div class="poster wide news1 inbox"></div>
+    <p class="meta">15 Apr 2020 · 👁 242 · 💬 14</p>
+    <h3>O'lish vaqti emas. Film premyerasi ko'chirildi</h3>
+    <p>Kinoteatrlar yopilgani sababli kutilgan filmning chiqish sanasi keyinga surildi. Studiya tomoshabinlarning xavfsizligi birinchi o'rinda ekanini ta'kidladi.</p>
+    <p>Yangi premyera sanasi haqidagi ma'lumotlar rasmiy e'lon qilinishi bilan shu sahifada paydo bo'ladi.</p>
+    <a href="#yangiliklar" class="mbtn">← Yangiliklarga qaytish</a></div></div></div>
+
+<div class="modal" id="n2"><a href="#yopish" class="bg"></a><div class="mbox single wide-box"><a href="#yopish" class="x">✕</a>
+  <div class="minfo"><div class="poster wide news2 inbox"></div>
+    <p class="meta">15 Apr 2020 · 👁 180 · 💬 9</p>
+    <h3>Sonik dizayni oxirgi anonsdan keyin qanday o'zgardi</h3>
+    <p>Birinchi treylerdan keyin tomoshabinlar qahramonning ko'rinishini keskin tanqid qildi. Ijodkorlar dizaynni qayta ishlashga qaror qildi.</p>
+    <a href="#yangiliklar" class="mbtn">← Yangiliklarga qaytish</a></div></div></div>
+
+<div class="modal" id="n3"><a href="#yopish" class="bg"></a><div class="mbox single wide-box"><a href="#yopish" class="x">✕</a>
+  <div class="minfo"><div class="poster wide news3 inbox"></div>
+    <p class="meta">15 Apr 2020 · 👁 120 · 💬 4</p>
+    <h3>Yangi treyler: tomoshabinlarni hayratga solgan lavhalar</h3>
+    <p>Yangi treylerdagi eng ta'sirli kadrlar va ularning orqasida turgan g'oyalar haqida qisqacha tahlil.</p>
+    <a href="#media" class="mbtn">▶ Treylerlarga o'tish</a></div></div></div>
+
+<div class="modal" id="n4"><a href="#yopish" class="bg"></a><div class="mbox single wide-box"><a href="#yopish" class="x">✕</a>
+  <div class="minfo"><div class="poster wide news4 inbox"></div>
+    <p class="meta">13 Apr 2020 · 👁 95 · 💬 2</p>
+    <h3>Ha, aynan shunday! Kino olamidagi eng yaxshi lahzalar</h3>
+    <p>Muxlislar o'tgan haftadagi eng yaxshi kino lahzalarini tanladi. Siz qaysi birini sevdingiz?</p>
+    <a href="#filmlar" class="mbtn">🎬 Mashhur filmlar</a></div></div></div>
+
+</body>
+</html>
