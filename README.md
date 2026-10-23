@@ -1,1 +1,2 @@
 # Kinoarea
+# mening-portfolioyim
