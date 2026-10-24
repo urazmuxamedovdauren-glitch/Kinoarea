@@ -3,3 +3,4 @@
 # mening-portfolioyim
 # Kinosayt
 # Davron-kinosayt
+# Davron-kinosayt
