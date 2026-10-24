@@ -4,3 +4,4 @@
 # Kinosayt
 # Davron-kinosayt
 # Davron-kinosayt
+# Urazmuxammedov-kinosayt
